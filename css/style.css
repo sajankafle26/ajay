@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: lato;
+    background: #f3f3f3;
+}
+ul 
+{
+    list-style: none;
+}
+a 
+{
+    text-decoration: none;
+}
+header
+{
+    background:#222;
+    padding: 10px;
+}
+.container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.flex
+{
+    justify-content: space-between;
+    display: flex;
+}
+.top_right_top
+{
+    text-align: right;
+}
+.top_right_top  li
+{
+    display: inline;
+}
+.top_right_top  li a
+{
+  color: #fff;
+  padding: 0px 15px;
+  border-right: 1px solid #fff;
+}
+.top_right_top li:last-child a 
+{
+    border: none;
+}
+.search
+{
+    margin: 15px 0 0 0;
+}
+.search input[type=text]
+{
+    width: 530px; height: 45px; 
+    border-radius: 5px 0 0 5px;
+}
+.search button 
+{
+    background: #f10e34;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+nav
+{
+    line-height: 45px;
+    background: #f10e34;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li 
+{
+    display: inline;
+   
+}
+nav ul li a 
+{
+    color: #fff;
+    padding: 10px 15px;
+}
+.banner-left
+{
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+}
+.banner-left li 
+{
+    line-height: 45px;
+    position: relative;
+    padding-left: 30px;
+}
+.banner-left li:after 
+{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.banner-left li:before 
+{
+    content: '';
+    width: 30px; height: 30px; background: url(../images/a.gif) no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+.white
+{
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 4px #000;
+    margin: auto;
+}
+.white p 
+{
+    text-align: center;
+}
+.cleft
+{
+    width: 300px;
+}
+.cleft h2 
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.cright
+{
+    width: 830px;
+}
+.cleft img 
+{
+    width: 100%;
+}
+.pbox
+{
+    width: 24%;
+}
+footer
+{
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+@media(max-width: 480px)
+{
+   .flex{ flex-direction: column; text-align: center;}
+   .search input[type=text]{ width: 70%;}
+   .banner-left, .banner-right, .cleft, .cright, .pbox{ width: 100%;}
+    
+}
